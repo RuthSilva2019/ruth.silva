@@ -1,0 +1,142 @@
+/* Generated from Figma Variables. First mode = :root default.
+   FLOAT tokens are unitless — multiply by 1px in calc() where a length is needed. */
+
+:root {
+  --alert-pure-ffc646b: rgb(255,196,107); /* @kind color */
+  --background-background-dark: var(--colors-brand-brand-900); /* @kind color */
+  --background-background-primary: var(--colors-brand-brand-500); /* @kind color */
+  --background-background-white: var(--colors-neutral-white); /* @kind color */
+  --border-border-default: var(--colors-neutral-neutral-400); /* @kind color */
+  --border-border-disabled: var(--colors-neutral-neutral-600); /* @kind color */
+  --border-border-error: var(--colors-signals-error); /* @kind color */
+  --border-border-focus: var(--colors-brand-brand-300); /* @kind color */
+  --border-border-primary: var(--colors-brand-brand-500); /* @kind color */
+  --color-grey-grey-400: rgb(158,162,174); /* @kind color */
+  --color-grey-grey-900: rgb(19,25,39); /* @kind color */
+  --color-white-white-100: rgb(255,255,255); /* @kind color */
+  --colors-brand-brand-100: rgb(220,222,255); /* @kind color */
+  --colors-brand-brand-200: rgb(191,195,255); /* @kind color */
+  --colors-brand-brand-300: rgb(149,155,255); /* @kind color */
+  --colors-brand-brand-500: rgb(79,89,251); /* @kind color */
+  --colors-brand-brand-600: rgb(63,71,201); /* @kind color */
+  --colors-brand-brand-700: rgb(47,53,151); /* @kind color */
+  --colors-brand-brand-900: rgb(16,18,50); /* @kind color */
+  --colors-neutral-neutral-100: rgb(217,217,217); /* @kind color */
+  --colors-neutral-neutral-200: rgb(192,192,192); /* @kind color */
+  --colors-neutral-neutral-400: rgb(141,141,141); /* @kind color */
+  --colors-neutral-neutral-500: rgb(128,128,128); /* @kind color */
+  --colors-neutral-neutral-50: rgb(242,242,242); /* @kind color */
+  --colors-neutral-neutral-600: rgb(102,102,102); /* @kind color */
+  --colors-neutral-neutral-700: rgb(121,121,121); /* @kind color */
+  --colors-neutral-neutral-800: rgb(51,51,51); /* @kind color */
+  --colors-neutral-neutral-900: rgb(40,40,40); /* @kind color */
+  --colors-neutral-white: rgb(255,255,255); /* @kind color */
+  --colors-signals-error: rgb(191,0,0); /* @kind color */
+  --font-family-body-text: var(--typography-font-family-font-family-2);
+  --font-family-headline: var(--typography-font-family-font-family-1);
+  --font-size-font-size-100: 18;
+  --font-weight-font-weight-700: 700;
+  --icon-color-icon-black: var(--color-grey-grey-900); /* @kind color */
+  --icon-color-icon-grey: var(--color-grey-grey-400); /* @kind color */
+  --icon-color-icon-white-2: var(--color-white-white-100); /* @kind color */
+  --icon-color-icon-white: var(--color-white-white-100); /* @kind color */
+  --icon-icon-default: var(--colors-neutral-neutral-800); /* @kind color */
+  --icon-icon-disabled: var(--colors-neutral-neutral-500); /* @kind color */
+  --icon-icon-primary-active: var(--colors-brand-brand-700); /* @kind color */
+  --icon-icon-primary-hover: var(--colors-brand-brand-600); /* @kind color */
+  --icon-icon-primary: var(--colors-brand-brand-500); /* @kind color */
+  --icon-icon-white: var(--colors-neutral-white); /* @kind color */
+  --interactive-form-background-form-active: var(--colors-neutral-white); /* @kind color */
+  --interactive-form-background-form-default: var(--colors-neutral-neutral-50); /* @kind color */
+  --interactive-form-background-form-disabled: var(--colors-neutral-neutral-200); /* @kind color */
+  --interactive-form-background-form-hover: var(--colors-neutral-neutral-50); /* @kind color */
+  --interactive-primary-background-primary-active: var(--colors-brand-brand-700); /* @kind color */
+  --interactive-primary-background-primary-default: var(--colors-brand-brand-500); /* @kind color */
+  --interactive-primary-background-primary-disabled: var(--colors-neutral-neutral-200); /* @kind color */
+  --interactive-primary-background-primary-focus: var(--colors-brand-brand-500); /* @kind color */
+  --interactive-primary-background-primary-hover: var(--colors-brand-brand-600); /* @kind color */
+  --interactive-primary-foreground-primary-default: var(--colors-neutral-white); /* @kind color */
+  --interactive-secondary-background-secondary-active: var(--colors-brand-brand-200); /* @kind color */
+  --interactive-secondary-background-secondary-default: var(--colors-neutral-white); /* @kind color */
+  --interactive-secondary-background-secondary-disabled: var(--colors-neutral-neutral-200); /* @kind color */
+  --interactive-secondary-background-secondary-focus: var(--colors-neutral-white); /* @kind color */
+  --interactive-secondary-background-secondary-hover: var(--colors-brand-brand-100); /* @kind color */
+  --interactive-secondary-foreground-secondary-default: var(--colors-brand-brand-500); /* @kind color */
+  --line-length: 650;
+  --primary-light: rgb(235,239,247); /* @kind color */
+  --primary-pure: rgb(12,110,229); /* @kind color */
+  --radius-button: var(--radius-radius-1);
+  --radius-card: var(--radius-radius-2);
+  --radius-radius-1: 7;
+  --radius-radius-2: 10;
+  --space-100: var(--spacing-spacing-1);
+  --space-1300: var(--spacing-spacing-13);
+  --space-200: var(--spacing-spacing-2);
+  --space-24: 24;
+  --space-300: var(--spacing-spacing-3);
+  --space-32: 32;
+  --space-400: var(--spacing-spacing-4);
+  --space-40: 40;
+  --space-500: var(--spacing-spacing-5);
+  --space-64: 64;
+  --space-8-2: 8;
+  --space-800: var(--spacing-spacing-8);
+  --space-8: 8;
+  --spacing-4xl: var(--space-64);
+  --spacing-6-2: 24;
+  --spacing-6: 24;
+  --spacing-l: var(--space-32);
+  --spacing-spacing-13: 104;
+  --spacing-spacing-1: 4;
+  --spacing-spacing-2: 8;
+  --spacing-spacing-3: 16;
+  --spacing-spacing-4: 24;
+  --spacing-spacing-5: 32;
+  --spacing-spacing-6: 40;
+  --spacing-spacing-7: 56;
+  --spacing-spacing-8: 64;
+  --spacing-system-radius-xl-2: var(--spacing-6-2);
+  --spacing-system-radius-xl: var(--spacing-6);
+  --spacing-xl: var(--space-40);
+  --spacing-xs-2: var(--space-8-2);
+  --spacing-xs: var(--space-8);
+  --spacings-spacing-m: var(--space-24);
+  --surface-color-surface-white: var(--color-white-white-100); /* @kind color */
+  --surface-surface-base: var(--colors-neutral-white); /* @kind color */
+  --text-color-text-disabled: var(--color-grey-grey-400); /* @kind color */
+  --text-color-text-primary-black: var(--color-grey-grey-900); /* @kind color */
+  --text-color-text-primary-white-2: var(--color-white-white-100); /* @kind color */
+  --text-color-text-primary-white: var(--color-white-white-100); /* @kind color */
+  --text-default: var(--colors-neutral-neutral-900); /* @kind color */
+  --text-text-default: var(--colors-neutral-neutral-800); /* @kind color */
+  --text-text-disabled-2: var(--colors-neutral-neutral-700); /* @kind color */
+  --text-text-disabled: var(--colors-neutral-neutral-500); /* @kind color */
+  --text-text-placeholder: var(--colors-neutral-neutral-600); /* @kind color */
+  --text-text-primary-active: var(--colors-brand-brand-700); /* @kind color */
+  --text-text-primary-hover: var(--colors-brand-brand-600); /* @kind color */
+  --text-text-primary: var(--colors-brand-brand-500); /* @kind color */
+  --typography-font-family-font-family-1: "Inter";
+  --typography-font-family-font-family-2: "EB Garamond";
+  --typography-font-scale-font-scale-1000: 75;
+  --typography-font-scale-font-scale-1100: 100;
+  --typography-font-scale-font-scale-400: 16;
+  --typography-font-scale-font-scale-500: 18;
+  --typography-font-scale-font-scale-600: 24;
+  --typography-font-scale-font-scale-700: 32;
+  --typography-font-scale-font-scale-900: 56;
+  --typography-font-weight-font-weight-400: 400;
+  --typography-font-weight-font-weight-700: 700;
+  --typography-resp-font-scale-1000: var(--typography-font-scale-font-scale-1000);
+  --typography-resp-font-scale-1100: var(--typography-font-scale-font-scale-1100);
+  --typography-resp-font-scale-600: var(--typography-font-scale-font-scale-600);
+  --typography-resp-font-scale-700: var(--typography-font-scale-font-scale-700);
+  --viewport: "desktop";
+}
+
+:root[data-mode="mobile"] {
+  --typography-resp-font-scale-1000: var(--typography-font-scale-font-scale-900);
+  --typography-resp-font-scale-1100: var(--typography-font-scale-font-scale-1000);
+  --typography-resp-font-scale-600: var(--typography-font-scale-font-scale-500);
+  --typography-resp-font-scale-700: var(--typography-font-scale-font-scale-600);
+  --viewport: "mobile";
+}
