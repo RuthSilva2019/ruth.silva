@@ -2005,6 +2005,8 @@
 <style>
 html{scroll-behavior:smooth}
 html,body{overflow-x:clip}
+div:has(> image-slot:not([data-filled])){display:none!important}
+div[style*="max-width:1120px"]:has(> div > image-slot:not([data-filled])){display:none!important}
 @media (max-width:900px){.rs-deco{display:none!important}}
 @media (max-width:640px){.rs-avail{position:relative!important;right:auto!important;bottom:auto!important;width:auto!important;max-width:none!important;margin-top:12px!important}.rs-tag-b{display:none!important}}
 body{margin:0;background:#fffafc;color:#1d1f24;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
@@ -5073,14 +5075,11 @@ class Component extends DCLogic {
         role: 'Product Designer · Smart Online',
         impact: 'Design System usado pelos três squads e em todas as telas atuais da plataforma',
         summary: 'Da marca ao sistema, e do sistema à escala: como uma base construída por uma única designer sobreviveu à troca da própria ferramenta.',
-        cover: 'assets/dsx-capa.jpg',
+        cover: '',
         figs: {
-          'Abertura': [['assets/dsx-quatro-frentes.jpg', 'As quatro frentes da Online Applications, cada uma com a sua cor. O azul do Smart deu origem à marca da Smart Online, em 2025.']],
-          'O ponto de partida': [['assets/dsx-antes-depois.jpg', 'Importação de Guias: antes (2022) e depois (2023). Dados fictícios.']],
-          'Adoção e cultura': [['assets/dsx-revisoes.jpg', 'Revisão do Login (2023), focada em fundamentos visuais, e Feature Review do Gerenciamento de Tributos (2025), focada em texto, interação e produto.']]
-        },
-        decFigs: [['assets/dsx-mapeamento.jpg', 'Mapeamento da plataforma: o elemento em produção ao lado da versão do Design System.'], ['assets/dsx-upload-regras.jpg', 'Um componente de upload para três contextos, com os mesmos estados e as regras escritas para o handoff.']],
-        brandKit: [['assets/dsx-pilares.jpg', 'Pilares', 'Princípios, identidade, diretrizes, componentes e documentação: o mapa da estruturação.'], ['assets/dsx-cores.jpg', 'Cores', 'Das cores soltas de até 2022 à paleta do sistema: Primary, neutras e feedback.'], ['assets/dsx-tipografia.jpg', 'Tipografia', 'Maven Pro em três pesos, aplicada à marca e à interface na primeira versão.'], ['assets/dsx-controles.jpg', 'Controles', 'Botões, checkbox, radio e inputs com estados, no fundo claro e na cor da marca.'], ['assets/dsx-icones.jpg', 'Ícones', 'Biblioteca em três tamanhos e a escala de tom de ativação.'], ['assets/dsx-ilustracao.jpg', 'Ilustração', 'O Smartzinho e a linguagem de ilustração da marca.']],
+          },
+        decFigs: [],
+        brandKit: [],
         meta: [{ k: 'Empresa', v: 'Smart Online (antes Online Applications) · B2B SaaS fiscal e de pagamentos' }, { k: 'Período', v: '2023 a 2026 (em andamento)' }, { k: 'Meu papel', v: 'Product Designer Pleno na estruturação (2023) · Sênior a partir de 2024' }, { k: 'Time', v: 'Head de Produto, tech leads e front-ends dos squads de Pagamentos, Gestão e Plataforma, QA. A partir de nov/2025, uma designer júnior que acompanho; em 2026, a Head de Design.' }, { k: 'Competências', v: 'Visão sistêmica · Governança de Design · Influência sem autoridade formal · Tradução de regra de negócio em componente' }],
         tldr: [{ k: 'Em resumo', v: 'Em 2023 assumi o Design de uma plataforma B2B fiscal construída só por Engenharia. Estruturei um Design System a partir da marca que eu já tinha criado no Marketing, conduzi sua adoção com o time e, quando a empresa trocou a biblioteca de componentes por velocidade, em 2026, negociei as condições para que a identidade e a lógica da experiência continuassem as mesmas.' }],
         secA: [
@@ -5326,7 +5325,7 @@ class Component extends DCLogic {
           baKey: e => { const d = e.key === 'ArrowLeft' ? -5 : e.key === 'ArrowRight' ? 5 : 0; if (d) { e.preventDefault(); this.setState(s => ({ ba: Math.max(0, Math.min(100, (s.ba ?? 50) + d)) })); } },
           coverId: 'hero-' + c.key, isDS: c.key === 'design-system', yes: true,
           dsStats: [{ v: '~100', l: 'componentes com variantes' }, { v: '131', l: 'variáveis entre primitivos e semânticos' }, { v: '3', l: 'squads usando o sistema' }, { v: '5', l: 'camadas, de fundamentos a templates' }],
-          zoomV1: () => this.setState({ lb: this.res('assets/ds-v1-web.jpg') }),
+          zoomV1: () => this.setState({ lb: this.res('assets/ds-v1.jpg') }),
           dsV1: [['Brand Fontes', 'Família, pesos Bold a Regular e uso Highlight / Base'], ['Cores', 'Primary em 5 tons, Primary Cinza e hierarquia cromática'], ['Neutras e feedback', 'Low e High em 4 tons; sucesso, aviso, erro e ajuda'], ['Botões', 'Preenchido e contorno, com estados'], ['Inputs', 'Padrão, foco, desabilitado e erro, em fundo claro e escuro'], ['Check, Radio e Switch', 'Controles com estados, em fundo claro e escuro']].map(([t, d]) => ({ t, d })),
           dsPleno: ['Identifiquei inconsistências e necessidades de padronização', 'Estruturei fundamentos: paleta, hierarquia cromática e tipografia', 'Organizei variáveis no Figma para cores, tipografia, espaçamento e elevação', 'Criei e evoluí componentes a partir das necessidades dos produtos', 'Mapeei os itens da plataforma que precisavam mudar e organizei os ajustes', 'Alinhei as modificações com Front-end e revisei com QA'],
           dsSenior: ['Evolução e manutenção do Design System', 'Consistência das experiências entre os produtos', 'Governança de UX e Design Reviews', 'Acompanhamento da qualidade das interfaces', 'Alinhamento entre Design, Produto e Engenharia', 'Orientação e apoio a outros designers'],
